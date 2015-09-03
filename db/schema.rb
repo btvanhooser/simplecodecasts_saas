@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150829073836) do
-=======
-ActiveRecord::Schema.define(version: 20150828202539) do
->>>>>>> e372ca83fe80fbf5b316dafa69205a75aef0fbc4
+ActiveRecord::Schema.define(version: 20150903171500) do
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -33,7 +29,6 @@ ActiveRecord::Schema.define(version: 20150828202539) do
   end
 
   create_table "profiles", force: true do |t|
-<<<<<<< HEAD
     t.integer  "user_id"
     t.string   "first_name"
     t.string   "last_name"
@@ -43,8 +38,10 @@ ActiveRecord::Schema.define(version: 20150828202539) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-=======
->>>>>>> e372ca83fe80fbf5b316dafa69205a75aef0fbc4
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "users", force: true do |t|
